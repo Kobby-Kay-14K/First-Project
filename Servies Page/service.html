@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbershop Services</title>
+  <link rel="stylesheet" href="/Servies Page/service.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="B&H Barbershop Logo">
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="appointment-btn">APPOINTMENT</a>
+  </header>
+
+  <section class="services">
+    <h1>SERVICES</h1>
+    <div class="service-container">
+      <!-- Haircut -->
+      <div class="service-box">
+        <div class="service-icon">💈</div>
+        <h3>Haircut</h3>
+        <p>Professional hairstyling and cutting services.</p>
+        <span class="learn-btn" onclick="openModal('haircutModal')">LEARN MORE</span>
+      </div>
+
+      <!-- Beard Trim -->
+      <div class="service-box">
+        <div class="service-icon">🧔</div>
+        <h3>Beard Trim</h3>
+        <p>Expert trimming and shaping for your beard.</p>
+        <span class="learn-btn" onclick="openModal('beardModal')">LEARN MORE</span>
+      </div>
+
+      <!-- Shave -->
+      <div class="service-box">
+        <div class="service-icon">🪒</div>
+        <h3>Hot Towel Shave</h3>
+        <p>Traditional shave with hot towel comfort.</p>
+        <span class="learn-btn" onclick="openModal('shaveModal')">LEARN MORE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div id="haircutModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('haircutModal')">&times;</span>
+      <h2>Haircut</h2>
+      <p>Includes consultation, shampoo, precision cut, and styling. Perfect for any occasion.</p>
+      <p><strong>Duration:</strong> 30-45 minutes</p>
+      <p><strong>Price:</strong> $25</p>
+    </div>
+  </div>
+
+  <div id="beardModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('beardModal')">&times;</span>
+      <h2>Beard Trim</h2>
+      <p>Beard shaping and trimming using clippers and scissors for a clean look.</p>
+      <p><strong>Duration:</strong> 20 minutes</p>
+      <p><strong>Price:</strong> $15</p>
+    </div>
+  </div>
+
+  <div id="shaveModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('shaveModal')">&times;</span>
+      <h2>Hot Towel Shave</h2>
+      <p>A relaxing traditional shave with pre-shave oils, hot towel, and aftershave treatment.</p>
+      <p><strong>Duration:</strong> 40 minutes</p>
+      <p><strong>Price:</strong> $30</p>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+</body>
+</html>
