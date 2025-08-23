@@ -1,0 +1,132 @@
+/* =========================
+   Global Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0d0d0d; /* Dark background */
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+/* =========================
+   Navbar
+========================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 10%;
+  background: #0d0d0d;
+  border-bottom: 1px solid #222;
+}
+
+nav .logo img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #d4af37; /* Gold accent */
+}
+
+.appointment-btn {
+    background: #fff;
+    color: #111;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+.appointment-section {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.appointment-section h1 {
+  text-align: center;
+  color: #f4c542;
+  margin-bottom: 10px;
+}
+
+.appointment-section p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #222;
+  color: #eee;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+  outline: none;
+  border-color: #f4c542;
+}
+
+.appointment-form button {
+  margin-top: 20px;
+  padding: 14px;
+  background: #f4c542;
+  border: none;
+  color: #111;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.appointment-form button:hover {
+  background: #d9a900;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  margin-top: 50px;
+  color: #aaa;
+}

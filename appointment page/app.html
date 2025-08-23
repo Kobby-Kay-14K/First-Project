@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - O'JOE Barbershop</title>
+  <link rel="stylesheet" href="/First-Project/appointment page/app.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="O'JOE Barbershop Logo">
+    </div>
+    <ul>
+      <li><a href="/First-Project/Homepage/home.html">Home</a></li>
+      <li><a href="/First-Project/Servies Page/service.html">Services</a></li>
+      <li><a href="/First-Project/product page/product.html">Products</a></li>
+      <li><a href="/First-Project/blog Page/blog.html">Blog</a></li>
+      <li><a href="/First-Project/contact page/contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="/First-Project/appointment page/app.html" class="appointment-btn">APPOINTMENT</a>
+  </nav>
+
+  <!-- Appointment Form -->
+  <section class="appointment-section">
+    <h1>Book an Appointment</h1>
+    <p>Fill out the form below to schedule your visit with us.</p>
+
+    <form class="appointment-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890">
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="service">Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select a Service --</option>
+        <option value="haircut">Haircut</option>
+        <option value="shave">Shave</option>
+        <option value="beard-trim">Beard Trim</option>
+        <option value="package">Haircut + Beard Package</option>
+      </select>
+
+      <label for="barber">Choose Barber (Optional)</label>
+      <select id="barber" name="barber">
+        <option value="">-- Any Barber --</option>
+        <option value="john">John</option>
+        <option value="mike">Mike</option>
+        <option value="alex">Alex</option>
+      </select>
+
+      <label for="notes">Additional Notes</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Any special request?"></textarea>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>©️ 2025 O'JOE Barbershop. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

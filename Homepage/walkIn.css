@@ -1,0 +1,130 @@
+/* =========================
+   Global Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0d0d0d; /* Dark background */
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+/* =========================
+   Navbar
+========================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 10%;
+  background: #0d0d0d;
+  border-bottom: 1px solid #222;
+}
+
+nav .logo img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #d4af37; /* Gold accent */
+}
+  .appointment-btn {
+    background: #fff;
+    color: #111;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+/* Walk-ins Section */
+.walkins-section {
+
+  background:url('/First-Project/Homepage/images-5.jpeg') no-repeat center center/cover;
+  background-image: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 80px 10%;
+  text-align: center;
+  color: #020202;
+}
+
+
+
+.walkins-container h2 {
+  font-size: 40px;
+  color: #f4c542;  /* gold accent */
+  margin-bottom: 15px;
+}
+
+.walkins-container .subtitle {
+  font-size: 18px;
+  color: #060606;
+  margin-bottom: 30px;
+}
+
+.hours {
+  margin-bottom: 25px;
+}
+
+.hours h3 {
+  font-size: 22px;
+  color: #f4c542;
+  margin-bottom: 10px;
+}
+
+.hours ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hours ul li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #070707;
+}
+
+.note {
+  font-size: 15px;
+  color: #070606;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #f4c542;
+  color: #111;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d4a932;
+}
